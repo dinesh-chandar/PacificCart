@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cooler Master MM711 RGB</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+       <link rel="stylesheet" href="style3.css">
+    <link rel="stylesheet" href="../../style.css">
+    
+</head>
+<body>
+    <div class="header">
+       <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="../../home.html">  <img src="../../images/logo.png" width="75px"></a>
+                <h1>PACIFIC CART</h1>
+
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="../../home.html">Home</a></li>
+                    <li><a href="../../product.html">Products</a></li>
+                    <li><a href="../../aboutus.html">About</a></li>
+                    <li><a href="../../contactus.css">Contact</a></li>
+                    <li><a href="../../account.html">Account</a></li>
+                </ul>
+                
+            </nav>
+            <img src="../../images/cart.png" width="30px" height="30px">
+            <img src="../../images/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+          
+       </div>
+    </div>
+       
+       
+<!--------------single-product--------------->
+<div class="small-container single-product">
+    <div class="row">
+        <div class="col-2">
+            <img src="../../productimages/grocery/onion-gallery-1.jpg" width="100%" id="ProductImg">
+            <div class="small-img-row">
+               <div class="small-img-col">
+                   <img src="../../productimages/grocery/onion-gallery-1.jpg" class="small-img" width="100%">
+               </div>
+               <div class="small-img-col">
+                   <img src="../../productimages/grocery/onion-gallery-2.jpg" class="small-img" width="100%">
+               </div>
+               <div class="small-img-col">
+                   <img src="../../productimages/grocery/onion-gallery-3.jpg" class="small-img" width="100%">
+               </div>
+               
+            </div>
+            
+        </div>
+        <div class="col-detail">
+            
+            <h1>Onion (1 kg)</h1>
+            <h4>₹30</h4>
+            
+  
+</select>
+            
+            <input type="number" value="1">
+            <a href="../../cart.html" class="btn">Add To Cart</a>
+            <br>
+            <h2>PRODUCT DETAILS <i class="fa fa-indent"></i></h2><br>
+            
+            <h5>About</h5>
+<ul>
+    <h6></h6>
+<li>Onion is a vegetable which is almost like a staple in Indian food. This is also known to be one of the essential ingredients of raw salads. They come in different colours like white, red or yellow and are quite in demand in cold salads and hot soups.</li><br>
+<li></li><br>
+<li></li><br>
+<li></li>
+</ul>
+
+<h5>Benefits</h5>
+<ul>
+    <h6></h6>
+<li>Onions are known to have antiseptic, antimicrobial and antibiotic properties which help you to get rid of infections.</li><br>
+<li>If a piece of onion is inhaled, it can slow down or stop nose bleeding.</li><br>
+<li>Those who have sleeping disorders or insomnia can have a good night sleep if they have an onion every day.</li><br>
+<li></li><br>
+</ul>
+
+
+        </div>
+    </div>
+</div>
+     
+   
+<!-------------footer-------------->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2">
+              
+                <ul>
+                    <h3>ABOUT</h3>
+                    <li><a href="About.html">About us</a></li>           
+                 <li><a href="">Contact us</a></li>
+                <li><a href="">Whole sale</a></li>
+                </ul>
+               
+            </div>
+            <div class="col-md-2">
+               
+               
+                <ul>
+                    <h3>HELP</h3>
+                    <li><a href="">Payments</a></li>           
+                    <li><a href="">Shipping</a></li>
+                    <li><a href="">Cancellation & Returns</a></li>
+                </ul>
+               
+            </div>
+            <div class="col-md-2">
+               
+               
+                <ul>
+                    <h3>POLICY</h3>
+                    <li><a href="">Return policy</a></li>           
+                    <li><a href="">Security</a></li>
+                    <li><a href="">Privacy</a></li>
+                </ul>
+               
+            </div>
+            <div class="col-md-2">
+               
+               
+                <ul>
+                    <h3>SOCIAL</h3>
+                    <li><a href="">Facebook</a></li>           
+                    <li><a href="">Twitter</a></li>
+                    <li><a href="">Instagram</a></li>
+                </ul>
+               
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Copyright 2021 - Pacific Cart</p>
+    </div>
+   
+ </div>
+
+
+
+<!-----------js for toggle menu----------->
+<script>
+    var MenuItems=document.getElementById("MenuItems");
+    MenuItems.style.maxHeight="0px";
+    function menutoggle(){
+        if(MenuItems.style.maxHeight == "0px")
+    {
+        MenuItems.style.maxHeight = "200px";
+    }else
+    {
+        MenuItems.style.maxHeight = "0px"
+    } 
+    }
+
+//-------------Produc Gallery------------
+    
+var ProductImg = document.getElementById("ProductImg");
+    
+    var SmallImg = document.getElementsByClassName("small-img");
+       
+ 
+        SmallImg[0].onclick = function()
+        {
+            ProductImg.src = SmallImg[0].src;
+        }
+        SmallImg[1].onclick = function()
+        {
+            ProductImg.src = SmallImg[1].src;
+        
+        }
+        SmallImg[2].onclick = function()
+        {
+            ProductImg.src = SmallImg[2].src;
+        
+        }
+        SmallImg[3].onclick = function()
+        {
+            ProductImg.src = SmallImg[3].src;
+        
+        }
+
+  //-------------End Produc Gallery------------  
+    
+    
+    
+    
+</script>
+
+
+
+</body>
+</html>
+
